@@ -46,7 +46,7 @@ public class FXMLController {
     	elenco.cancella(txtResult.getSelectedText());
     	tmp= System.nanoTime()-tmp;
     	txtResult.setText(elenco.getElenco().toString());
-    	txtTempo.setText(""+tmp+"");
+    	txtTempo.setText(""+tmp/1e9+"");
     }
 
     @FXML
@@ -57,7 +57,7 @@ public class FXMLController {
     	tmp= System.nanoTime()-tmp;
     	txtParola.setText("");
     	txtResult.setText(elenco.getElenco().toString());
-    	txtTempo.setText(""+tmp+"");
+    	txtTempo.setText(""+tmp/1e9+"");
     }
 
     @FXML
@@ -67,7 +67,7 @@ public class FXMLController {
     	tmp= System.nanoTime()-tmp;
     	txtResult.setText("");
    
-    	txtTempo.setText(""+tmp+"");
+    	txtTempo.setText(""+tmp/1e9+"");
     	// TODO
     }
 
